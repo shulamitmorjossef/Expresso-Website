@@ -1,0 +1,54 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EXpresso - Contact Us</title>
+  <link rel="stylesheet" href="../style/contact.css">
+</head>
+<body>
+  <button class="back-button" onclick="window.location.href='home.html'">Back</button>
+
+  <div class="contact-page">
+    <h1>Contact Us</h1>
+    <form id="contactForm" action="thankyou.html" method="GET">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+
+      <button type="submit" class="submit-button">Send</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+      
+      if (!name || !email || !message) {
+        alert("Please fill out all fields.");
+        event.preventDefault();
+        return;
+      }
+
+      const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+      if (!emailPattern.test(email)) {
+        alert("Please enter a valid email address (must contain '@' and '.').");
+        event.preventDefault();
+      }
+    });
+  </script>
+</body>
+</html> -->
