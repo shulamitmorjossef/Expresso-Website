@@ -83,14 +83,19 @@ body {
   color: #333;
 }
 
+
 .admin-navbar {
   width: 100%;
+  border-radius: 40%;
   background-color: #4b2e0b;
   color: white;
   padding: 10px 0;
   position: fixed;
   top: 0;
+  left: 50%;                  
+  transform: translateX(-50%); 
   z-index: 1000;
+  text-align: center;         
 }
 
 .nav-list {
@@ -153,6 +158,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
+
 }
 
 .read-more-btn:hover {
@@ -193,4 +199,63 @@ body {
     width: 80%;
     margin-bottom: 20px;
   }
+}
+
+.footer {
+  margin-top: 50px;
+  padding: 20px;
+  background: #fbeee3;
+  text-align: center;
+  border-radius: 10px;
+}
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: #5a351e;
+  margin: 0 10px;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #aa5a5a;
+}
+
+
+.intro-text {
+  font-size: 20px;
+  color: #4b2e0b;
+  margin-bottom: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.owner-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+}
+
+.owner-desc {
+  margin-top: 15px;
+  font-size: 16px;
+  font-style: italic;
+  color: #5a351e;
+  line-height: 1.5;
+}
+#more-text {
+  font-family: 'Lora', serif;
+  font-size: 18px;
+  line-height: 1.9;
+  color: #3a2a1a;
+  text-align: justify;
+  margin: 30px auto;
+  max-width: 850px;
+  background: #fdfaf6;
+  padding: 20px 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: all 0.3s ease-in-out;
 }

@@ -3,47 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Expresso</title>
-  <link rel="stylesheet" href="../style/about.css">
-</head>
-<body>
-<header class="admin-navbar">
-    <nav>
-      <ul class="nav-list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="media.html">Catalog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <button class="back-button" onclick="window.location.href='index.html'">Back</button>
-  <div class="about-page">
-    <h1>About Expresso</h1>
-    <p>Expresso is a unique digital coffee platform born from a blend of technology, a love for espresso, and a desire to bring a premium coffee experience into everyday homes. The site was developed by a team of third - year Software Engineering students as part of a final project in a Project Management course. Our goal wasn’t just to build a functional system - it was to create a meaningful, high - quality product that people would truly enjoy using.</p>
-    <p>Whether you're a casual coffee drinker or a true enthusiast, Expresso offers a rich selection of coffee machines, flavorful capsules, milk frothers, and complementary accessories—all carefully selected to deliver a perfect cup, every single time. The site is designed to provide a seamless shopping experience, with intuitive navigation, smart product filtering, a user - friendly cart, and a smooth checkout process.</p>
-    <p>Every product featured on Expresso is chosen with attention to quality, comfort, and design. From premium coffee blends and precisely engineered machines to elegant frothers that complete the experience - our aim was to make every cup feel like a café moment at home, with just one click.</p>
-    <p>Expresso places technology at the core - both for the end user and site administrators. We developed a dedicated admin panel that enables easy product management, inventory updates, and real - time editing - all in a clean, responsive interface that’s accessible and simple to use.</p>
-    <p>Expresso is more than a project - it’s a hands-on journey in system development, product thinking, teamwork, and user experience design. From concept to code, we worked with passion, precision, and a touch of caffeine to create something we’re proud to share.</p>
-  </div>
-</body>
-</html> -->
-
-
-
-
-
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About - Business</title>
   <link rel="stylesheet" href="../style/about.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 <body>
 
@@ -75,21 +39,87 @@
     Expresso places technology at the core - both for the end user and site administrators. We developed a dedicated admin panel that enables easy product management, inventory updates, and real - time editing - all in a clean, responsive interface that’s accessible and simple to use.
     Expresso is more than a project - it’s a hands-on journey in system development, product thinking, teamwork, and user experience design. From concept to code, we worked with passion, precision, and a touch of caffeine to create something we’re proud to share.
   </main>
-<!-- 
-  <footer class="footer">
-    <p>&copy; 2025 Built by Shulamit Morjossef | <a href="#">LinkedIn</a> | <a href="#">Facebook</a> | <a href="#">Twitter</a></p>
-  </footer> -->
-    <footer class="footer">
-    <p>Built by Shulamit Morjossef</p>
-    <div class="social-links">
-      <a href="#">Facebook</a> | 
-      <a href="#">Twitter</a> | 
-      <a href="#">LinkedIn</a>
-    </div>
-  </footer>
+<footer class="footer">
+  <p>&copy; Shulamit Morjossef</p>
+  <div class="social-links">
+    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://x.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.linkedin.com/in/shulamit-mor-yossef/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+  </div>
+</footer>
 
 <button class="back-button" onclick="window.location.href='index.html'">Back</button>
   <script src="script.js"></script>
+  <script>
+    function toggleReadMore() {
+      const moreText = document.getElementById("more-text");
+      moreText.style.display = (moreText.style.display === "none") ? "block" : "none";
+    }
+  </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Business</title>
+  <link rel="stylesheet" href="../style/about.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+
+  <header class="admin-navbar">
+    <ul class="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="media.html">Media</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </header>
+
+  <main class="about-page">
+    <h1>About Expresso</h1>
+    <p class="intro-text">Welcome to Expresso! We believe coffee is not just a drink, it’s an experience to enjoy every day.</p>
+    
+    <div class="about-images">
+      <div>
+        <img src="../images/expresso-logo.png" alt="Business Logo">
+
+      </div>
+    
+      <div class="owner-section">
+        <img src="../images/owner.jpg" alt="Owner">
+        <p class="owner-desc">Behind Expresso stands a passionate coffee enthusiast who combined technology with tradition to create a place where every customer feels at home with a perfect cup of coffee.</p>
+      </div>
+    </div>
+
+    <button class="read-more-btn" onclick="toggleReadMore()">Read More</button>
+    <p id="more-text" style="display:none;">
+      Expresso is a unique digital coffee platform born from a blend of technology, a love for espresso, and a desire to bring a premium coffee experience into everyday homes. The site was developed by a team of third-year Software Engineering students as part of a final project in a Project Management course. Our goal wasn't just to build a functional system - it was to create a meaningful, high-quality product that people would truly enjoy using.<br><br>
+      Whether you're a casual coffee drinker or a true enthusiast, Expresso offers a rich selection of coffee machines, flavorful capsules, milk frothers, and complementary accessories - all carefully selected to deliver a perfect cup, every single time. The site is designed to provide a seamless shopping experience, with intuitive navigation, smart product filtering, a user - friendly cart, and a smooth checkout process.<br><br>
+      Expresso is more than a project - it’s a hands - on journey in system development, product thinking, teamwork, and user experience design. From concept to code, we worked with passion, precision, and a touch of caffeine to create something we’re proud to share.
+    </p>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; Shulamit Morjossef</p>
+    <div class="social-links">
+      <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://x.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/shulamit-mor-yossef/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+  </footer>
+
+  <button class="back-button" onclick="window.location.href='index.html'">Back</button>
+
   <script>
     function toggleReadMore() {
       const moreText = document.getElementById("more-text");

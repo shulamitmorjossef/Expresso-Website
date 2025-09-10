@@ -92,13 +92,18 @@ body {
 
 .admin-navbar {
   width: 100%;
+  border-radius: 40%;
   background-color: #4b2e0b;
   color: white;
   padding: 10px 0;
   position: fixed;
   top: 0;
+  left: 50%;                  
+  transform: translateX(-50%); 
   z-index: 1000;
+  text-align: center;         
 }
+
 
 .nav-list {
   list-style: none;
@@ -206,3 +211,26 @@ body {
 .back-button:hover {
   background-color: #472c18;
 }
+
+.footer {
+  margin-top: 50px;
+  padding: 20px;
+  background: #fbeee3;
+  text-align: center;
+  border-radius: 10px;
+}
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: #5a351e;
+  margin: 0 10px;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #aa5a5a;
+}
+

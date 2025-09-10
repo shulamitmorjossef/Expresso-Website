@@ -6,6 +6,10 @@
   <title>Expresso - Home</title>
   <link rel="stylesheet" href="../style/home.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
 </head>
 <body>
     
@@ -22,17 +26,32 @@
   </header>
 
   <main class="main-content">
-    <section class="hero">
-      <div class="carousel">
-        <div class="slide fade"><img src="../images/b2.jpg" alt="Coffee 2"></div>
-        <div class="slide fade"><img src="../images/b3.jpg" alt="Coffee 3"></div>
-        <div class="slide fade"><img src="../images/b5.png" alt="Coffee 5"></div>
-        <div class="slide fade"><img src="../images/b1.jpg" alt="Coffee 1"></div>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Welcome to Expresso</h1>
+      <br>
+      <h2>When coffee anf fashion are crosses</h2>
+    </div>
 
-        <a class="prev">&#10094;</a>
-        <a class="next">&#10095;</a>
-      </div>
-    </section>
+    
+    <div class="side-banner left-banner" data-aos="fade-right">
+      <p>Fun fact:<br> Coffee is the second most traded commodity in the world after oil!</p>
+    </div>
+    <div class="side-banner right-banner" data-aos="fade-left">
+      <p>This week: <br><br> 40% off all products!</p>
+    </div>
+
+    <div class="carousel">
+      <div class="slide fade"><img src="../images/b2.jpg" alt="Coffee 2"></div>
+      <div class="slide fade"><img src="../images/b3.jpg" alt="Coffee 3"></div>
+      <div class="slide fade"><img src="../images/b5.png" alt="Coffee 5"></div>
+      <div class="slide fade"><img src="../images/b1.jpg" alt="Coffee 1"></div>
+
+      <a class="prev">&#10094;</a>
+      <a class="next">&#10095;</a>
+    </div>
+  </section>
+
 
     <section class="products">
       <h2 class="categories-title">Our Products</h2>
@@ -53,15 +72,21 @@
     </section>
   </main>
 
-  <footer class="footer">
-    <p>Built by Shulamit Morjossef</p>
-    <div class="social-links">
-      <a href="#">Facebook</a> | 
-      <a href="#">Twitter</a> | 
-      <a href="#">LinkedIn</a>
-    </div>
-  </footer>
+<footer class="footer">
+  <p>&copy; Shulamit Morjossef</p>
+  <div class="social-links">
+    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://x.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.linkedin.com/in/shulamit-mor-yossef/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+  </div>
+</footer>
+
 
   <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
