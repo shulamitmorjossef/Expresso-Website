@@ -54,3 +54,108 @@
   </script>
 </body>
 </html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ - Expresso</title>
+  <link rel="stylesheet" href="../style/faq.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="admin-navbar">
+    <ul class="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="media.html">Media</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </header>
+
+  <button class="back-button" onclick="window.location.href='index.html'">Back</button>
+
+  <main class="faq-page">
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="accordion">
+      <div class="accordion-item">
+        <button class="accordion-header">What is the best coffee machine for home use?</button>
+        <div class="accordion-body">
+          <p>It depends on your preference, but capsule machines like Expresso Capsule series are easy to use and maintain.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">How do I clean my milk frother?</button>
+        <div class="accordion-body">
+          <p>Detach all removable parts, wash them with warm soapy water, and wipe the main unit with a damp cloth.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">Which coffee capsules are compatible with my machine?</button>
+        <div class="accordion-body">
+          <p>All Expresso branded capsules are compatible with Expresso machines. Third-party capsules may not fit properly.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">Can I make cold coffee with my machine?</button>
+        <div class="accordion-body">
+          <p>Yes, most machines allow you to brew hot coffee and then pour over ice. Some machines even have cold brew options.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">Do you offer warranty on your products?</button>
+        <div class="accordion-body">
+          <p>Yes, all machines come with a 1-year warranty covering manufacturing defects.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">How long does it take to brew a coffee?</button>
+        <div class="accordion-body">
+          <p>Typically 1-3 minutes depending on the machine and coffee type.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">Are your machines energy efficient?</button>
+        <div class="accordion-body">
+          <p>Yes, all modern Expresso machines have automatic shut-off and energy-saving modes.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">Can I use my machine with different coffee strengths?</button>
+        <div class="accordion-body">
+          <p>Yes, most machines allow you to adjust strength settings according to your taste.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- <footer class="footer">
+    <p>&copy; 2025 Your Name | <a href="#">LinkedIn</a> | <a href="#">Facebook</a> | <a href="#">Twitter</a></p>
+  </footer> -->
+
+  
+  <footer class="footer">
+    <p>Built by Shulamit Morjossef</p>
+    <div class="social-links">
+      <a href="#">Facebook</a> | 
+      <a href="#">Twitter</a> | 
+      <a href="#">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    const headers = document.querySelectorAll(".accordion-header");
+    headers.forEach(header => {
+      header.addEventListener("click", () => {
+        const item = header.parentElement;
+        item.classList.toggle("active");
+      });
+    });
+  </script>
+</body>
+</html>
