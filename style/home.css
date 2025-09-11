@@ -243,3 +243,42 @@ body {
   color: inherit;      
   display: block;       
 }
+.trivia-section {
+  max-width: 800px;
+  margin: 100px auto 50px;
+  padding: 20px;
+  background: #fdf6f0;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.trivia-question {
+  margin-bottom: 20px;
+}
+
+.trivia-question p {
+  font-weight: 600;
+  color: #5c4033;
+}
+
+.trivia-question label {
+  display: block;
+  margin: 5px 0;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#submit-trivia {
+  background-color: #5a351e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+#submit-trivia:hover {
+  background-color: #472c18;
+}

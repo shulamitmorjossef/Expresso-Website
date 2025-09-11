@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expresso - Trivia</title>
+  <link rel="stylesheet" href="../style/home.css">
+  <link rel="stylesheet" href="../style/global.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <header class="admin-navbar">
+    <div class="burger">&#9776;</div>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="media.html">Catalog</a></li>
+        <li><a href="trivia.html">Trivia</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <section class="trivia-section">
+      <h2 class="categories-title">Coffee Trivia</h2>
+      <form id="trivia-form">
+        <div class="trivia-question">
+          <p>1. What country is the largest producer of coffee in the world?</p>
+          <label><input type="radio" name="q1" value="correct"> Brazil</label>
+          <label><input type="radio" name="q1" value="wrong"> Colombia</label>
+          <label><input type="radio" name="q1" value="wrong"> Ethiopia</label>
+        </div>
+
+        <div class="trivia-question">
+          <p>2. What does “espresso” literally mean in Italian?</p>
+          <label><input type="radio" name="q2" value="wrong"> Quick</label>
+          <label><input type="radio" name="q2" value="correct"> Pressed</label>
+          <label><input type="radio" name="q2" value="wrong"> Strong</label>
+        </div>
+
+        <div class="trivia-question">
+          <p>3. Coffee beans are actually seeds of a fruit. What is the fruit called?</p>
+          <label><input type="radio" name="q3" value="correct"> Cherry</label>
+          <label><input type="radio" name="q3" value="wrong"> Berry</label>
+          <label><input type="radio" name="q3" value="wrong"> Nut</label>
+        </div>
+
+        <div class="trivia-question">
+          <p>4. Which coffee type is known for its layered espresso, steamed milk, and foam?</p>
+          <label><input type="radio" name="q4" value="wrong"> Latte Macchiato</label>
+          <label><input type="radio" name="q4" value="correct"> Cappuccino</label>
+          <label><input type="radio" name="q4" value="wrong"> Americano</label>
+        </div>
+
+        <div class="trivia-question">
+          <p>5. Which country introduced the first coffeehouse in Europe?</p>
+          <label><input type="radio" name="q5" value="wrong"> France</label>
+          <label><input type="radio" name="q5" value="correct"> Italy</label>
+          <label><input type="radio" name="q5" value="wrong"> England</label>
+        </div>
+
+        <button type="button" id="submit-trivia">Submit</button>
+      </form>
+
+      <div id="trivia-result" style="margin-top:20px; font-size:1.2rem; font-weight:600;"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; Shulamit Morjossef</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
