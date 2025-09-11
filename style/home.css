@@ -238,3 +238,8 @@ body {
     display: none;
   }
 }
+.category-box a {
+  text-decoration: none; 
+  color: inherit;      
+  display: block;       
+}
