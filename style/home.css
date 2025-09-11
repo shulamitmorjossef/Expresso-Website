@@ -41,7 +41,7 @@ body {
   position: relative;
   overflow: hidden;
   margin-top: 80px;
-  height: 450px; /* border-radius: 50px; */
+  height: 450px; 
   padding: 10px;
 }
 .slide {
@@ -92,7 +92,7 @@ body {
 .category-box {
   background: #fdf6f0;
   border-radius: 20px;
-  width: 240px; /* height: 320px; */ /* הסר או שנה ל-auto */
+  width: 240px; 
   padding: 15px;
   text-align: center;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
@@ -105,8 +105,8 @@ body {
 }
 .category-image {
   width: 100%;
-  height: auto; /* שנה את זה מ-700px ל-auto */
-  object-fit: contain; /* או cover אם את רוצה למלא את הקופסה */
+  height: auto; 
+  object-fit: contain; 
   border-radius: 12px;
   margin-bottom: 10px;
 }

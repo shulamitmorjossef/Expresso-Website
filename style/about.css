@@ -56,16 +56,10 @@ body {
   gap: 20px;
   margin-bottom: 20px;
 }
-/* .about-images img {
-  width: 300px;
-  border-radius: 12px;
-  object-fit: cover;
-} */
 
 .about-images img {
   width: 100%;
-  max-width: 300px; /* שומר על גודל מקסימלי במסכים גדולים */
-  border-radius: 12px;
+  max-width: 300px; 
   object-fit: cover;
 }
 
