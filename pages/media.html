@@ -62,6 +62,18 @@
         <img src="../images/Machine2_yellow.jpg" alt="Machine 2" class="lightbox-img">
         <p>Coffee Machine 2</p>
       </div>
+      <div class="product-card machine">
+        <img src="../images/Machine3_black.jpg" alt="Machine 3" class="lightbox-img">
+        <p>Coffee Machine 3</p>
+      </div>
+      <div class="product-card machine">
+        <img src="../images/Machine3_white.jpg" alt="Machine 3" class="lightbox-img">
+        <p>Coffee Machine 3</p>
+      </div>  
+      <div class="product-card machine">
+        <img src="../images/Machine3_silver.jpg" alt="Machine 3" class="lightbox-img">
+        <p>Coffee Machine 3</p>
+      </div>
 
       <div class="product-card capsule">
         <img src="../images/Capsule_blueberry.jpg" alt="Capsule 1" class="lightbox-img">
@@ -175,23 +187,7 @@
   </div>
 </footer>
 
-  <script src="catalog.js"></script>
   <script src="main.js"></script>
-  <script>
-    const lightbox = document.getElementById("lightbox");
-    const lightboxImg = document.getElementById("lightbox-img");
-    const images = document.querySelectorAll(".lightbox-img");
 
-    images.forEach(img => {
-      img.addEventListener("click", () => {
-        lightbox.style.display = "block";
-        lightboxImg.src = img.src;
-      });
-    });
-
-    function closeLightbox() {
-      lightbox.style.display = "none";
-    }
-  </script>
 </body>
 </html>
