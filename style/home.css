@@ -100,7 +100,7 @@ body {
   background: #fdf6f0;
   border-radius: 20px;
   width: 240px;
-  height: 320px;
+  /* height: 320px; */  /* הסר או שנה ל-auto */
   padding: 15px;
   text-align: center;
   box-shadow: 0 6px 15px rgba(0,0,0,0.1);
@@ -112,9 +112,10 @@ body {
   transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
-
 .category-image {
   width: 100%;
+  height: auto;        /* שנה את זה מ-700px ל-auto */
+  object-fit: contain; /* או cover אם את רוצה למלא את הקופסה */
   border-radius: 12px;
   margin-bottom: 10px;
 }
@@ -163,15 +164,17 @@ body {
 
 .back-button:hover { background-color: #472c18; }
 
+
 @media (max-width: 768px) {
-  .category-box { width: 45%; }
-  .slide img { height: 400px; }
+  .category-box { width: 45%; height: auto; }
+  .category-image { height: auto; }
 }
 
 @media (max-width: 480px) {
-  .category-box { width: 100%; }
-  .slide img { height: 250px; }
+  .category-box { width: 100%; height: auto; }
+  .category-image { height: auto; }
 }
+
 .hero {
   position: relative;
   padding-top: 120px; 
@@ -223,4 +226,35 @@ body {
 }
 [data-aos] {
   transition: all 0.8s ease-in-out;
+  
+}
+
+
+
+/* מסכים קטנים */
+@media (max-width: 768px) {
+  .side-banner {
+    width: 100px;      
+    height: 250px;     
+    opacity: 0.7;      
+  }
+}
+@media (max-width: 768px) {
+  .side-banner {
+    position: relative;  
+    top: auto;
+    left: auto;
+    right: auto;
+    transform: none;
+    margin: 10px auto;
+    width: 90%;
+    height: auto;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .side-banner {
+    display: none; 
+  }
 }

@@ -1,0 +1,100 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f1ea;
+  color: #333;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+Navbar
+.admin-navbar {
+  width: 100%;
+  background-color: #4b2e0b;
+  color: white;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  text-align: center;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-list li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.nav-list li a:hover {
+  background: #5c4033;
+}
+
+/* Burger icon */
+.burger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #5c4033;
+  position: absolute;
+  top: 12px;
+  right: 20px;
+}
+
+/* Mobile nav */
+@media (max-width: 768px) {
+  .nav-list {
+    flex-direction: column;
+    background-color: #4b2e0b;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    display: none;
+    text-align: left;
+    padding: 20px;
+    border-radius: 0 0 0 10px;
+  }
+
+  .nav-list.show {
+    display: flex;
+    animation: slideDown 0.3s ease;
+  }
+
+  .burger {
+    display: block;
+  }
+}
+
+/* Animation */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
